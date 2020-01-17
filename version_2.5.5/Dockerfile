@@ -21,13 +21,9 @@ RUN wget http://step.esa.int/thirdparties/sen2cor/2.5.5/Sen2Cor-02.05.05-Linux64
     rm /app/Sen2Cor-02.05.05-Linux64.run
 
 ENV PATH $PATH:/home/bin/
-RUN cd /home/lib/python2.7/site-packages/sen2cor/aux_data && \ 
-  wget ftp://geo10.elie.ucl.ac.be/v207/ESACCI-LC-L4-ALL-FOR-SEN2COR.zip && \
-  unzip ESACCI-LC-L4-ALL-FOR-SEN2COR.zip && \
-  rm ESACCI-LC-L4-ALL-FOR-SEN2COR.zip
 
 # Setting environment variables
 ENV PYTHONUNBUFFERED 1
 
 ### Run the sen2cor application
-ENTRYPOINT ["/home/Sen2Cor-02.08.00-Linux64/bin/L2A_Process"]
+ENTRYPOINT ["/home/bin/L2A_Process"]
