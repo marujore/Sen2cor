@@ -8,7 +8,7 @@
   extract the downloaded file
 
 ## step 3: run sen2cor from outside docker:
-  docker run --rm -v /path/to/CCI4SEN2COR:/home/lib/python2.7/site-packages/sen2cor/aux_data -v /path/to/folder/containing/.SAFEfile:/app sen2cor_280 yourFile.SAFE
+  docker run --rm -v /path/to/CCI4SEN2COR:/home/lib/python2.7/site-packages/sen2cor/aux_data -v /path/to/folder/containing/.SAFEfile:/app sen2cor_2.8.0 yourFile.SAFE
 
 ## step 3 (alternative): run sen2cor from inside docker:
   docker run --rm -it --entrypoint="" -v /path/to/CCI4SEN2COR:/home/lib/python2.7/site-packages/sen2cor/aux_data -v /path/to/folder/containing/.SAFEfile:/app sen2cor_2.8.0 bash
