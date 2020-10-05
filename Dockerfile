@@ -1,9 +1,9 @@
 FROM geographica/gdal2
 RUN apt-get update -y && apt-get install -y \
-	python-pip \
-	python-dev \
-	curl \
-	unzip \
+    python-pip \
+    python-dev \
+    curl \
+    unzip \
     wget && \
     rm -rf /var/lib/apt/lists/* 
 
