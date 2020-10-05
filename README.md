@@ -1,4 +1,4 @@
-# docker-sen2cor
+# Docker Sen2cor 2.8.0
 ## Sen2cor Parameters
 Sen2cor parameters can be changing by modifing the /sen2cor/2.8/L2A_GIPP.xml file and mounting it.
 This repository L2A_GIPP.xml only set DEM_Terrain_Correction to FALSE.
